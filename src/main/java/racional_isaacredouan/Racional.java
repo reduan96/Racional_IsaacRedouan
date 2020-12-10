@@ -29,6 +29,21 @@ public class Racional {
         this.denominador = denominador;
 
     }
+    
+    
+    public void Suma(int numerador1,int denominador1,int numerador2, int denominador2){
+        int resultado;
+        if(denominador1==denominador2){
+           resultado=numerador1+numerador2;
+            System.out.println(resultado+"/"+denominador1);
+           
+        }else{
+           resultado= ((numerador1*denominador2)+(denominador1*numerador2));
+           System.out.println(resultado+"/"+(denominador1*denominador2));
+        }
+       
+     
+    }
 
     public int getNumerador() {
         return numerador;
@@ -48,7 +63,7 @@ public class Racional {
 
             denominador = 1;
         }
-        
+
         this.denominador = denominador;
     }
 
@@ -57,4 +72,10 @@ public class Racional {
         System.out.println("Número racional " + numerador
                 + "/" + denominador);
     }
+
+    @Override
+    public String toString() {
+        return numerador + "/" + denominador;
+    }
+
 }

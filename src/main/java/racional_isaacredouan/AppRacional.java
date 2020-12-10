@@ -78,6 +78,13 @@ public class AppRacional {
 
         //B
         System.out.println("Aleatorio:");
-        operacion.Aleatorio();
+        double numAl;
+        numAl = operacion.Aleatorio();
+        System.out.printf("resultado aleatorio: %.2f", numAl);
+        //B
+        double resultadoZ = (double) z.getNumerador() / z.getDenominador();
+        System.out.printf("\nresultado Z: %.2f", resultadoZ);
+        double resultadoK = (double) k.getNumerador() / k.getDenominador();
+        System.out.printf("\nresultado K: %.2f", resultadoK);
     }
 }

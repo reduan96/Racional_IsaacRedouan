@@ -88,18 +88,19 @@ public class Racional {
 
     }
 
-    public void Aleatorio() {
+    public double Aleatorio() {
 
         Random aleatorio = new Random();
 
-        int numerador1 = aleatorio.nextInt(101);
-        int denominador1 = aleatorio.nextInt(101);
+        double numerador1 = aleatorio.nextInt(101);
+        double denominador1 = aleatorio.nextInt(101);
 
         while (denominador1 == 0) {
 
             denominador1 = aleatorio.nextInt(101);
         }
         System.out.println(numerador1 + "/" + denominador1);
+        return numerador1 / denominador1;
     }
 
     public int getNumerador() {

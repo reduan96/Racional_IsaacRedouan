@@ -14,20 +14,25 @@ import java.util.Scanner;
 public class AppRacional {
 
     public static void main(String[] args) {
-        Racional racional1 = new Racional();
-        Racional racional2 = new Racional();
-//Racional 1
-        racional1.setNumerador(5);
-        racional1.setDenominador(6);
-       
-//Racional 2
-        racional2.setNumerador(5);
-        racional2.setDenominador(7);
+
+        //Se pueden indicar los valores tanto en el constructor parametrizado
+        //**como en sus respectivos setters
+        Racional racional1 = new Racional(5, 6);
+        Racional racional2 = new Racional(5, 6);
+        
+        //**
+        //Racional 1
+        //racional1.setNumerador(5);
+        //racional1.setDenominador(6);
+
+        //Racional 2
+        //racional2.setNumerador(5);
+        //racional2.setDenominador(7);
 
         Racional suma = new Racional();
 
         System.out.println("Suma:");
-        System.out.print(racional1.toString()+" + "+racional2.toString()+" = ");
+        System.out.print(racional1.toString() + " + " + racional2.toString() + " = ");
         suma.Suma(racional1.getNumerador(), racional1.getDenominador(), racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
     }

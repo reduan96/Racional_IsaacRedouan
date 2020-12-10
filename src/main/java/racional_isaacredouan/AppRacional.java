@@ -17,7 +17,7 @@ public class AppRacional {
 
         //Se pueden indicar los valores tanto en el constructor parametrizado
         //**como en sus respectivos setters
-        Racional racional1 = new Racional(3, 6);
+        Racional racional1 = new Racional(1, 6);
         Racional racional2 = new Racional(1, 6);
 
         //**
@@ -57,6 +57,14 @@ public class AppRacional {
         System.out.println("División:");
         System.out.print(racional1.toString() + " / " + racional2.toString() + " = ");
         operacion.Dividir(racional1.getNumerador(), racional1.getDenominador(),
+                racional2.getNumerador(), racional2.getDenominador());
+        System.out.println("");
+        
+        
+         //Prueba del funcionamiento del método Igualdad
+        System.out.println("Igualar:");
+        System.out.print(racional1.toString() + " ?= " + racional2.toString() + " = ");
+        operacion.Igualdad(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
     }

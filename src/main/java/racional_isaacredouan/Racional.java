@@ -62,13 +62,28 @@ public class Racional {
         resultado2 = denominador1 * denominador2;
         System.out.println(resultado1 + "/" + resultado2);
     }
-    
+
     public void Dividir(int numerador1, int denominador1, int numerador2, int denominador2) {
 
         int resultado1, resultado2;
         resultado1 = numerador1 * denominador2;
         resultado2 = numerador2 * denominador1;
         System.out.println(resultado1 + "/" + resultado2);
+    }
+
+    public void Igualdad(int numerador1, int denominador1, int numerador2, int denominador2) {
+        boolean igual = true;
+        double resultado1, resultado2;
+        resultado1 =(double) numerador1 / denominador1;
+        resultado2 =(double) numerador2 / denominador2;
+
+        if (resultado1 != resultado2) {
+            igual = false;
+            System.out.println(igual);
+        } else {
+            System.out.println(igual);
+        }
+
     }
 
     public int getNumerador() {

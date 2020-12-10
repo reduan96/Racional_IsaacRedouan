@@ -10,25 +10,24 @@ package racional_isaacredouan;
  * @author isaac
  */
 public class Racional {
-    
+
     private int numerador;
     private int denominador;
-    
-    public Racional(){
-        
+
+    public Racional() {
+
         this.numerador = 1;
         this.denominador = 1;
     }
 
     public Racional(int numerador, int denominador) {
-        
-          if(this.denominador==0){
-              this.denominador=1;
-          }
+
+        if (denominador == 0) {
+            denominador = 1;
+        }
         this.numerador = numerador;
         this.denominador = denominador;
-        
-      
+
     }
 
     public int getNumerador() {
@@ -38,8 +37,24 @@ public class Racional {
     public int getDenominador() {
         return denominador;
     }
-    
-    
-    
-    
+
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    public void setDenominador(int denominador) {
+
+        if (denominador == 0) {
+
+            denominador = 1;
+        }
+        
+        this.denominador = denominador;
+    }
+
+    public void imprimirConsola() {
+
+        System.out.println("Número racional " + numerador
+                + "/" + denominador);
+    }
 }

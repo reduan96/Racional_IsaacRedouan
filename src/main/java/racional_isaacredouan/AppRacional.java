@@ -5,8 +5,6 @@
  */
 package racional_isaacredouan;
 
-import java.util.Scanner;
-
 /**
  *
  * @author reduan
@@ -96,6 +94,12 @@ public class AppRacional {
         System.out.println("\nSuma Z y K:");
         System.out.print(z.toString() + " + " + k.toString() + " = ");
         operacion.Suma(z.getNumerador(), z.getDenominador(), k.getNumerador(),
+                k.getDenominador());
+
+        //B 
+        System.out.println("\nDividir Z y K:");
+        System.out.print(z.toString() + " / " + k.toString() + " = ");
+        operacion.Dividir(z.getNumerador(), z.getDenominador(), k.getNumerador(),
                 k.getDenominador());
     }
 }

@@ -65,9 +65,16 @@ public class AppRacional {
         operacion.Igualdad(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
-        
+
         //Prueba del funcionamiento del método aleatorio
         System.out.println("Aleatorio:");
         operacion.Aleatorio();
+
+        System.out.println("-----------------------------");
+        System.out.println("Pruebas dictadas del ejercicio");
+        //A
+        Racional Z = new Racional(4, 5);
+        Racional K = new Racional(3, 4);
+
     }
 }

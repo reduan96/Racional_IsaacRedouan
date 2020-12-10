@@ -73,8 +73,11 @@ public class AppRacional {
         System.out.println("-----------------------------");
         System.out.println("Pruebas dictadas del ejercicio");
         //A
-        Racional Z = new Racional(4, 5);
-        Racional K = new Racional(3, 4);
+        Racional z = new Racional(4, 5);
+        Racional k = new Racional(3, 4);
 
+        //B
+        System.out.println("Aleatorio:");
+        operacion.Aleatorio();
     }
 }

@@ -86,9 +86,16 @@ public class AppRacional {
         System.out.printf("\nresultado Z: %.2f", resultadoZ);
         double resultadoK = (double) k.getNumerador() / k.getDenominador();
         System.out.printf("\nresultado K: %.2f", resultadoK);
-        
+
         //A
         System.out.print("\nComparación Z y K: ");
-       operacion.Igualdad(z.getNumerador(), z.getDenominador(), k.getNumerador(), z.getDenominador());
+        operacion.Igualdad(z.getNumerador(), z.getDenominador(), k.getNumerador(),
+                z.getDenominador());
+
+        //B
+        System.out.println("\nSuma Z y K:");
+        System.out.print(z.toString() + " + " + k.toString() + " = ");
+        operacion.Suma(z.getNumerador(), z.getDenominador(), k.getNumerador(),
+                k.getDenominador());
     }
 }

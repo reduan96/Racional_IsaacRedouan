@@ -29,20 +29,18 @@ public class Racional {
         this.denominador = denominador;
 
     }
-    
-    
-    public void Suma(int numerador1,int denominador1,int numerador2, int denominador2){
+
+    public void Suma(int numerador1, int denominador1, int numerador2, int denominador2) {
         int resultado;
-        if(denominador1==denominador2){
-           resultado=numerador1+numerador2;
-            System.out.println(resultado+"/"+denominador1);
-           
-        }else{
-           resultado= ((numerador1*denominador2)+(denominador1*numerador2));
-           System.out.println(resultado+"/"+(denominador1*denominador2));
+        if (denominador1 == denominador2) {
+            resultado = numerador1 + numerador2;
+            System.out.println(resultado + "/" + denominador1);
+
+        } else {
+            resultado = ((numerador1 * denominador2) + (denominador1 * numerador2));
+            System.out.println(resultado + "/" + (denominador1 * denominador2));
         }
-       
-     
+
     }
 
     public int getNumerador() {

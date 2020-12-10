@@ -19,4 +19,27 @@ public class Racional {
         this.numerador = 1;
         this.denominador = 1;
     }
+
+    public Racional(int numerador, int denominador) {
+        
+          if(this.denominador==0){
+              this.denominador=1;
+          }
+        this.numerador = numerador;
+        this.denominador = denominador;
+        
+      
+    }
+
+    public int getNumerador() {
+        return numerador;
+    }
+
+    public int getDenominador() {
+        return denominador;
+    }
+    
+    
+    
+    
 }

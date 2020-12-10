@@ -5,6 +5,8 @@
  */
 package racional_isaacredouan;
 
+import java.util.Random;
+
 /**
  *
  * @author isaac
@@ -74,8 +76,8 @@ public class Racional {
     public void Igualdad(int numerador1, int denominador1, int numerador2, int denominador2) {
         boolean igual = true;
         double resultado1, resultado2;
-        resultado1 =(double) numerador1 / denominador1;
-        resultado2 =(double) numerador2 / denominador2;
+        resultado1 = (double) numerador1 / denominador1;
+        resultado2 = (double) numerador2 / denominador2;
 
         if (resultado1 != resultado2) {
             igual = false;
@@ -84,6 +86,20 @@ public class Racional {
             System.out.println(igual);
         }
 
+    }
+
+    public void Aleatorio() {
+
+        Random aleatorio = new Random();
+
+        int numerador1 = aleatorio.nextInt(101);
+        int denominador1 = aleatorio.nextInt(101);
+
+        while (denominador1 == 0) {
+
+            denominador1 = aleatorio.nextInt(101);
+        }
+        System.out.println(numerador1 + "/" + denominador1);
     }
 
     public int getNumerador() {

@@ -27,11 +27,10 @@ public class AppRacional {
         //Racional 2
         //racional2.setNumerador(5);
         //racional2.setDenominador(7);
-        
         //Creación del objeto para realizar la llamada de los métodos de las
         //operaciones indicadas
         Racional operacion = new Racional();
-        
+
         //Prueba del funcionamiento del método suma
         System.out.println("Suma:");
         System.out.print(racional1.toString() + " + " + racional2.toString() + " = ");
@@ -52,20 +51,23 @@ public class AppRacional {
         operacion.Multiplicar(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
-        
+
         //Prueba del funcionamiento del método dividir
         System.out.println("División:");
         System.out.print(racional1.toString() + " / " + racional2.toString() + " = ");
         operacion.Dividir(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
-        
-        
-         //Prueba del funcionamiento del método Igualdad
+
+        //Prueba del funcionamiento del método Igualdad
         System.out.println("Igualar:");
         System.out.print(racional1.toString() + " ?= " + racional2.toString() + " = ");
         operacion.Igualdad(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
+        
+        //Prueba del funcionamiento del método aleatorio
+        System.out.println("Aleatorio:");
+        operacion.Aleatorio();
     }
 }

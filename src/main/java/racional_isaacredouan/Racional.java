@@ -55,6 +55,14 @@ public class Racional {
         }
     }
 
+    public void Multiplicar(int numerador1, int denominador1, int numerador2, int denominador2) {
+
+        int resultado1, resultado2;
+        resultado1 = numerador1 * numerador2;
+        resultado2 = denominador1 * denominador2;
+        System.out.println(resultado1+"/"+resultado2);
+    }
+
     public int getNumerador() {
         return numerador;
     }

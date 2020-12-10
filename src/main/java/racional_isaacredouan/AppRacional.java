@@ -28,16 +28,22 @@ public class AppRacional {
         //racional2.setNumerador(5);
         //racional2.setDenominador(7);
         Racional operacion = new Racional();
-        
+
         System.out.println("Suma:");
         System.out.print(racional1.toString() + " + " + racional2.toString() + " = ");
         operacion.Suma(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
-        
+
         System.out.println("Resta:");
         System.out.print(racional1.toString() + " - " + racional2.toString() + " = ");
         operacion.Resta(racional1.getNumerador(), racional1.getDenominador(),
+                racional2.getNumerador(), racional2.getDenominador());
+        System.out.println("");
+
+        System.out.println("Multiplicación:");
+        System.out.print(racional1.toString() + " * " + racional2.toString() + " = ");
+        operacion.Multiplicar(racional1.getNumerador(), racional1.getDenominador(),
                 racional2.getNumerador(), racional2.getDenominador());
         System.out.println("");
     }
